@@ -4,14 +4,17 @@
     margin: 0;
     padding: 0;
 }
+
 /* Media query para dispositivos móviles */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     /* Estilos específicos para dispositivos móviles */
 }
+
 /* Media query para tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     /* Estilos específicos para tablets */
 }
+
 /* Media query para desktops */
 @media only screen and (min-width: 1025px) {
     /* Estilos específicos para desktops */
@@ -22,13 +25,15 @@
     width: 10px;
     background-color: #e0cebc;
 }
-::-webkit-scrollbar-thumb
-{
+
+::-webkit-scrollbar-thumb {
     background: #03989e;
     border-radius: 10px;
     border-right: 2px solid #e0cebc;
 }
-::-webkit-scrollbar-track { /*scrollbar horizontal*/
+
+::-webkit-scrollbar-track {
+    /*scrollbar horizontal*/
     width: 0px;
 }
 
@@ -39,9 +44,9 @@
 
 title {
     font-family: "Arial", sans-serif;
-    }
+}
 
-    /*Body Style*/
+/*Body Style*/
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
@@ -51,12 +56,14 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1000px; 
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1em;
     overflow: auto;
 }
-/*Header Content Style*/ /* Header
+
+/*Header Content Style*/
+/* Header
 /* Header, del logo y del menú de navegación */
 
 header {
@@ -79,7 +86,7 @@ header {
     max-width: 150px;
     margin-right: auto;
     height: auto;
-    
+
 }
 
 
@@ -100,13 +107,16 @@ img {
 
 nav {
     display: flex;
-    justify-content: flex-end; /* para alinear a la derecha */
-    padding: 10px 0; /* cambiar el padding horizontal para hacer espacio entre los enlaces */
+    justify-content: flex-end;
+    /* para alinear a la derecha */
+    padding: 10px 0;
+    /* cambiar el padding horizontal para hacer espacio entre los enlaces */
 }
 
 nav a {
     color: #000000;
-    margin-left: 10%; /* para agregar espacio entre los enlaces */
+    margin-left: 10%;
+    /* para agregar espacio entre los enlaces */
 }
 
 nav a:hover {
@@ -115,7 +125,8 @@ nav a:hover {
 }
 
 
-/*hero section style*/ /* sección hero */
+/*hero section style*/
+/* sección hero */
 .hero {
     display: flex;
     flex-direction: column;
@@ -148,11 +159,12 @@ nav a:hover {
     cursor: pointer;
 }
 
-/*Two Column Section Style*/ /* descripción de la pagina web y sus servicios sobre propiedades inmobiliarias */
+/*Two Column Section Style*/
+/* descripción de la pagina web y sus servicios sobre propiedades inmobiliarias */
 .section {
     background-color: #e0cebc;
     padding: 100%;
-    }
+}
 
 .two-columns {
     display: flex;
@@ -160,54 +172,60 @@ nav a:hover {
     background-color: #03989e;
     padding: 2em 0;
     border: 1px solid #0b878d;
-    }
-    
-    
-    .column-img {  /* Column Image Style */
+}
+
+
+.column-img {
+    /* Column Image Style */
     flex: 1;
     text-align: center;
     border: 1px solid #0b878d;
-    }
-    
-    
-    .column-img img { /* Image Style */
+}
+
+
+.column-img img {
+    /* Image Style */
     width: 20%;
     height: auto;
-    }
-    
-    
-    .column-img img:hover { /* Hover Effect */
+}
+
+
+.column-img img:hover {
+    /* Hover Effect */
     transform: scale(0.95);
     transition: transform 0.3s ease-in-out;
-    }
-    
-    
-    .column-para { /* Column Paragraph Style */
+}
+
+
+.column-para {
+    /* Column Paragraph Style */
     flex: 1;
     text-align: center;
     text-decoration-color: #e0cebc;
     width: 90%;
-    
-    }
-    
-    
-    .column-para h2 { /* Column Heading Style */
+
+}
+
+
+.column-para h2 {
+    /* Column Heading Style */
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    }
-    
-    
-    .column-para p { /* Column Paragraph Style */ 
+}
+
+
+.column-para p {
+    /* Column Paragraph Style */
     font-size: 1.2em;
     text-align: justify;
     width: 90%;
-    }
+}
 
 /* sección de imagenes de propiedades inmobiliarias */
 .section {
     background-color: #e0cebc;
     padding: 100%;
-    }
+}
 
 .image-section {
     display: flex;
@@ -230,10 +248,11 @@ nav a:hover {
     height: auto;
     margin: 0 1em;
 }
+
 /* hover effect */
 .image-container img:hover {
-transform: scale(0.95);
-transition: transform 0.3s ease-in-out;
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* sección de contacto, servicios y logo */
@@ -243,9 +262,10 @@ transition: transform 0.3s ease-in-out;
     padding: 2em;
     border-top: 1px solid #03989e;
     margin-top: 2em;
-    }
-    footer {
-    margin: 0 auto; 
+}
+
+footer {
+    margin: 0 auto;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -255,87 +275,207 @@ transition: transform 0.3s ease-in-out;
     color: #000;
     flex-wrap: wrap;
     flex-direction: row;
-    }
-    .footer-column {
+}
+
+.footer-column {
     width: 20%;
     padding: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
-    #services {
+}
+
+#services {
     background-color: #e0cebc;
-    }
-    #scrollBtn:hover {
+}
+
+#scrollBtn:hover {
     background-color: #e0cebc;
     color: #03989e;
     cursor: pointer;
-    }
-    #services:hover {
-        box-shadow: 0 0 10px #e0cebc; /* agrega una sombra suave */
-        transform: scale(1.1); /* aumenta el tamaño en un 110% */
-        background-color: #e0cebc; /* cambia el color de fondo */
-        cursor: default; /* cambia el cursor a una mano */
-        }
-    .social-text {
+}
+
+#services:hover {
+    box-shadow: 0 0 10px #e0cebc;
+    /* agrega una sombra suave */
+    transform: scale(1.1);
+    /* aumenta el tamaño en un 110% */
+    background-color: #e0cebc;
+    /* cambia el color de fondo */
+    cursor: default;
+    /* cambia el cursor a una mano */
+}
+
+.social-text {
     text-align: center;
     margin-bottom: 1em;
-    }
-    .social-icons {
+}
+
+.social-icons {
     list-style: none;
     display: flex;
     justify-content: center;
     width: 30%;
     padding: 1em;
-    }
-    .footer-image {
+}
+
+.footer-image {
     width: 50%;
     padding: 1em;
-    }
-    .footer-rights {
+}
+
+.footer-rights {
     width: 100%;
     padding: 1em;
     text-align: center;
-    }
-    .footer-column h3 {
+}
+
+.footer-column h3 {
     margin-bottom: 1em;
     text-align: center;
     color: #000;
-    }
-    .footer-column ul {
+}
+
+.footer-column ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    }
-    .footer-column a {
+}
+
+.footer-column a {
     display: inline-block;
     margin: 0.5em;
     font-size: 1.5em;
     color: #000;
     text-decoration: none;
-    }
-    
-    .social-icons {
+}
+
+.social-icons {
     list-style: none;
     display: flex;
     justify-content: center;
-    }
-    
-    .social-icons li {
+}
+
+.social-icons li {
     margin: 0 10px;
-    }
-    
-    .social-icons a {
+}
+
+.social-icons a {
     color: #03989e;
-    }
-    
-    .social-icons a:hover {
+}
+
+.social-icons a:hover {
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
-    }
-    
-    @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .footer-column {
-    width: 100%;
+        width: 100%;
     }
+}
+
+/* Estilos para el contenedor de navegación */
+.cookies {
+    background-color:#e0cebc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para la lista de elementos de navegación */
+.cookies ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los enlaces de navegación */
+.cookies a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    display: block;
+}
+
+/* Estilos para el enlace activo */
+.cookies a.active {
+    background-color: #333;
+    color: #fff;
+}
+.aviso-cookies {
+	display: none;
+	background: #fff;
+	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 100;
+	padding-top: 60px;
+	box-shadow: 0px 2px 20px 10px rgba(222,222,222,.25);
+	text-align: center;
+}
+
+.aviso-cookies.activo {
+	display: block;
+}
+
+.aviso-cookies .galleta {
+	max-width: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+.aviso-cookies .titulo,
+.aviso-cookies .parrafo {
+	margin-bottom: 15px;
+}
+
+.aviso-cookies .boton {
+	width: 100%;
+	background: #595959;
+	border: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.aviso-cookies .boton:hover {
+	background: #000;
+}
+
+.aviso-cookies .enlace {
+	color: #4DBFFF;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+	text-decoration: underline;
+}
+
+.fondo-aviso-cookies {
+	display: none;
+	background: rgba(0,0,0,.20);
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.fondo-aviso-cookies.activo {
+	display: block;
 }

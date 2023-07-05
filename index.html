@@ -5,13 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K9LQ8TX');</script>
+    <!-- End Google Tag Manager -->
     <script src="https://kit.fontawesome.com/305b35530a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="css/mobile-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>M&C PROPIEDADES</title>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9LQ8TX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="Inicio" id="principio"></div>
     <header>
         <div class="header-content">
@@ -30,7 +46,16 @@
             </div>
         </div>
     </header>
+    <div class="aviso-cookies" id="aviso-cookies">
+        <img class="galleta" src="imag/cookie.svg" alt="Galleta">
+        <h3 class="titulo">Cookies</h3>
+        <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+        <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+        <a class="enlace" href="aviso-cookies.html">Aviso de Cookies</a>
+    </div>
+    <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
 
+    <script src="js/aviso-cookies.js"></script>
     <style>
         #scrollBtn {
             background-color: #03989e;
@@ -91,7 +116,7 @@
     <footer>
         <div class="footer-image">
             <a href="index.html">
-                <img src="imag/Diseño sin título.svg" alt="M&C Propiedades" style="max-width:250px;">
+                <img src="imag/Logo (2).svg" alt="M&C Propiedades" style="max-width:250px;">
             </a>
         </div>
         <div class="footer-column">
@@ -139,13 +164,15 @@
         <div class="footer-rights">
             <p>© 2023 M&C Propiedades. Todos los derechos reservados.</p>
         </div>
-        <nav>
+
+        <!--
+            <nav class="cookies"> 
             <ul>
                 <ul><a href="cookies.html">Cookies</a></ul>
                 <ul><a href="avisorecopilaciondeinfo.html">Aviso de recopilación de informacion</a></ul>
             </ul>
         </nav>
-
+        -->
     </footer>
     <script>
         function scrollToAnchor(aid) {

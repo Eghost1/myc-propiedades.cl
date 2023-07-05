@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://kit.fontawesome.com/305b35530a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style-propiedade2.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="css/mobile-style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>M&C PROPIEDADES</title>
+    <style>
+        .image-section {
+            background-color: #03989e;
+            /* Reemplaza #f1f1f1 con el color que desees */
+        }
+
+        /* Estilos para el carrusel */
+        .swiper-container {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swiper-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            transition-property: transform;
+        }
+
+        .swiper-slide {
+            flex-shrink: 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* Estilos para las flechas de navegación */
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .swiper-button-next {
+            right: 10px;
+        }
+
+        .swiper-button-prev {
+            left: 10px;
+        }
+
+        /* Estilos para la sección de descripción */
+        .description-section {
+            background-color: #03989e;
+            padding: 20px;
+        }
+
+        .description-section h3 {
+            font-size: 18px;
+            color: #e0cebc;
+            margin-bottom: 10px;
+        }
+
+        .description-section p {
+            font-size: 14px;
+            color: #e0cebc;
+        }
+
+        /* Estilos para la sección de imágenes */
+        .image-section {
+            background-color: #03989e;
+            /* Cambia el color de fondo aquí */
+        }
+        .swiper-slide img,
+        .swiper-slide video {
+            max-width: 60%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imag/Diseño sin título.svg" alt="M&C Propiedades">
+                </a>
+            </div>
+            <div class="navegator">
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="Quienes Somos.html">Quienes Somos</a>
+                    <a href="propiedades.html">Propiedades</a>
+                    <a href="servicios.html">Servicios</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="display: flex; flex-direction: column; align-items: center;">
+        <h1>M&C PROPIEDADES</h1>
+        <p>Transforma tu sueño de hogar en realidad con nuestras propiedades únicas e incomparables.</p>
+    </section>
+    <section class="video-imagenes-lote">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imag/FB_IMG_1674416760918.jpg" alt="Imagen 1" style="max-width: 60%">
+                </div>
+                <div class="swiper-slide">
+                    <video src="imag/SaveInsta.App - 3013057614960892308_56785756748.mp4"  controls autoplay alt="video"style="max-width: 55%">
+                </div>
+                <!-- Agrega más slides de acuerdo a tus necesidades -->
+            </div>
+            <!-- Agrega las flechas de navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="description-section">
+        <h3>Descripción de la propiedad</h3>
+        <ul style="text-decoration: solid;">Parcelas en Quinahue, Santa Cruz, VI región</ul>
+        <ul>15 lotes</ul>
+        <ul>Desde 4.300 a 6.000 metros cuadrados</ul>
+        <ul>Estacionamiento techado para 2 vehículos</ul>
+        <ul>Rol individual</ul>
+        <ul>Luz propia en cada lote</ul>
+        <ul>Factibilidad de agua</ul>
+        <ul>Precios desde UF 1.590 a UF 2.220</ul>
+    </section>
+
+    <footer>
+        <div class="footer-image">
+            <a href="index.html">
+                <img src="imag/Diseño sin título.svg" alt="M&C Propiedades" style="max-width:250px;">
+            </a>
+        </div>
+        <div class="footer-column">
+            <h3>¿Qué servicios prestamos?</h3>
+            <section id="services" class="image-section">
+                <ul>
+                    <li>Compra y Venta de propiedades</li>
+                    <li>Arriendos de propiedades</li>
+                    <li>Administración de arriendos</li>
+                    <li>Asesoramiento inmobiliario</li>
+                    <li>Venta de sitios y parcelas</li>
+                    <li>Inscripciones en CBR</li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer-column">
+        </div>
+        <div class="footer-column" id="contact">
+            <h3>Redes sociales</h3>
+            <ul class="social-icons">
+                <li>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=988314162&text=Quisiera%20ponerme%20en%20contacto%20con%20ustedes%20">
+                        <i class="fa fa-whatsapp" style="font-size:24px;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/myc.propiedades/">
+                        <i class="fa fa-instagram" style="font-size:24px;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100088800337579">
+                        <i class="fa fa-facebook" style="font-size:24px;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:mycasesoriasyservicios@gmail.com">
+                        <i class="fa fa-envelope" style="font-size:24px;"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-rights">
+            <p>© 2023 M&C Propiedades. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Agrega la biblioteca Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializa el carrusel con la biblioteca Swiper
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

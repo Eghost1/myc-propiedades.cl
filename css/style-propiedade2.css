@@ -50,7 +50,11 @@ body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: scroll;
+    background-color: #e0cebc;
+    overflow-x: hidden;
+    /* Evita el desplazamiento horizontal */
+    overflow-y: scroll;
+    /* Permite el desplazamiento vertical */
 }
 
 .main-container {
@@ -64,7 +68,6 @@ body {
 /*Header Content Style*/
 /* Header
 /* Header, del logo y del menú de navegación */
-
 header {
     width: 100%;
     background-color: #e0cebc;
@@ -85,15 +88,12 @@ header {
     max-width: 150px;
     margin-right: auto;
     height: auto;
-
 }
-
 
 img {
     width: 100%;
     height: auto;
 }
-
 
 
 /* Menú de navegación */
@@ -123,6 +123,50 @@ nav a:hover {
     background-color: #03989e;
 }
 
+
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: center;
+    margin: 10px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Centrar imágenes */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.property-image {
+    margin: 10px;
+    height: auto;
+}
+
+.property-image img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    background-color: #e0cebc;
+}
+
+
+/* Centrar videos */
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /*hero section style*/
 /* sección hero */
 .hero {
@@ -139,7 +183,6 @@ nav a:hover {
     margin-bottom: 0.5em;
 }
 
-
 /*hero section paragraph style*/
 .hero p {
     font-size: 1.2em;
@@ -147,110 +190,63 @@ nav a:hover {
     text-align: center;
 }
 
-/*hero section scroll button style*/
-#scrollBtn {
-    background-color: #03989e;
-    color: #e0cebc;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-/*Two Column Section Style*/
-/* descripción de la pagina web y sus servicios sobre propiedades inmobiliarias */
-.section {
-    background-color: #e0cebc;
-    padding: 100%;
-}
-
-.two-columns {
+/*hero section scroll button.
+/*hero section scroll button*/
+.hero .scroll-button {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: #03989e;
-    padding: 2em 0;
-    border: 1px solid #0b878d;
+    margin-top: 1em;
 }
 
-
-.column-img {
-    /* Column Image Style */
-    flex: 1;
-    text-align: center;
-    border: 1px solid #0b878d;
+/* Agrega un margen a las imágenes de propiedades */
+.property-image {
+    margin: 10px;
 }
 
-
-.column-img img {
-    /* Image Style */
-    width: 20%;
+/* Reduce el tamaño de las imágenes de propiedades */
+.property-image img {
+    max-width: 70%;
+    /* Reduce el tamaño de las imágenes al 70% */
     height: auto;
+    /* Mantiene la proporción de aspecto */
+    display: center;
+    /* Para centrar las imágenes horizontalmente */
+    margin: 10px auto;
+    /* Centra las imágenes horizontalmente */
+    background-color: #e0cebc;
+}
+
+.scroll-button .arrow {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    animation: scrollAnimation 1s infinite;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
-.column-img img:hover {
-    /* Hover Effect */
-    transform: scale(0.95);
-    transition: transform 0.3s ease-in-out;
-}
 
-
-.column-para {
-    /* Column Paragraph Style */
-    flex: 1;
-    text-align: center;
-    text-decoration-color: #e0cebc;
-    width: 90%;
-
-}
-
-
-.column-para h2 {
-    /* Column Heading Style */
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-
-.column-para p {
-    /* Column Paragraph Style */
+.description-section {
     font-size: 1.2em;
-    text-align: justify;
-    width: 90%;
-}
-
-/* sección de imagenes de propiedades inmobiliarias */
-.section {
-    background-color: #e0cebc;
-    padding: 100%;
-}
-
-.image-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #03989e;
-    padding: 2em 0;
-}
-
-/* image container style*/
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*image style*/
-.image-container img {
-    width: 20%;
-    height: auto;
-    margin: 0 1em;
-}
-
-/* hover effect */
-.image-container img:hover {
-    transform: scale(0.95);
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #e0cebc;
 }
 
 /* sección de contacto, servicios y logo */
@@ -371,32 +367,4 @@ footer {
     .footer-column {
         width: 100%;
     }
-}
-
-/* Estilos para el contenedor de navegación */
-.cookies {
-    background-color: #e0cebc;
-    padding: 10px;
-    font-size: 16px;
-}
-
-/* Estilos para la lista de elementos de navegación */
-.cookies ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilos para los enlaces de navegación */
-.cookies a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px;
-    display: block;
-}
-
-/* Estilos para el enlace activo */
-.cookies a.active {
-    background-color: #333;
-    color: #fff;
 }

@@ -4,121 +4,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script src="https://kit.fontawesome.com/305b35530a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-propiedade1.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="css/mobile-style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>M&C PROPIEDADES</title>
+    <style>
+      .image-section {
+            background-color: #03989e; /* Reemplaza #f1f1f1 con el color que desees */
+        }
+      /* Estilos para el carrusel */
+      .swiper-container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+      }
+  
+      .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+      }
+  
+      .swiper-slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+  
+      /* Estilos para las flechas de navegación */
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+      }
+  
+      .swiper-button-next {
+        right: 10px;
+      }
+  
+      .swiper-button-prev {
+        left: 10px;
+      }
+  
+      /* Estilos para la sección de descripción */
+      .description-section {
+        background-color: #03989e;
+        padding: 20px;
+      }
+  
+      .description-section h3 {
+        font-size: 18px;
+        color: #e0cebc;
+        margin-bottom: 10px;
+      }
+  
+      .description-section p {
+        font-size: 14px;
+        color: #e0cebc;
+      }
+
+      /* Estilos para la sección de imágenes */
+      .image-section {
+        background-color: #03989e; /* Cambia el color de fondo aquí */
+      }
+    </style>
 </head>
 <body>
-    <div class="Inicio" id="principio"></div>
-        <header>
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="imag/Diseño sin título.svg" alt="M&C Propiedades">
-                    </a>
-                </div>
-            <div class="navegator">
-                <nav>
-                    <a href="index.html">Inicio</a>
-                    <a href="Quienes Somos.html">Quienes Somos</a>
-                    <a href="propiedades.html">Propiedades</a>
-                    <a href="servicios.html">Servicios</a>
-                </nav>
-                </div>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imag/Diseño sin título.svg" alt="M&C Propiedades">
+                </a>
             </div>
-        </header>
+        <div class="navegator">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="Quienes Somos.html">Quienes Somos</a>
+                <a href="propiedades.html">Propiedades</a>
+                <a href="servicios.html">Servicios</a>
+            </nav>
+            </div>
+        </div>
+    </header>
 
-    <style>
-        #scrollBtn {
-            background-color: #03989e; /* cambiar color de fondo */
-            color: #e0cebc; /* cambiar color de texto */
-            border-radius: 5px; /* cambiar bordes redondeados */
-            padding: 10px 20px; /* cambiar tamaño de padding */
-            border: none; /* quitar borde */
-            cursor: pointer; /* agregar cursor para indicar que es un botón */
-        }
-        #scrollBtn:hover {
-            transform: scale(1.1); /* hacer que el botón sea llamativo al hacer hover */
-        }
-    </style>
-        <section class="hero" style="display: flex; flex-direction: column; align-items: center;">
-        <h1>M&C PROPIEDADES</h1>
-        <p>Transforma tu sueño de hogar en realidad con nuestras propiedades únicas e incomparables.</p>
-        <button id="scrollBtn" onclick="scrollToAnchor('services')">Nuestros Servicios</button>
-    </section>
+    <section class="hero" style="display: flex; flex-direction: column; align-items: center;">
+    <h1>M&C PROPIEDADES</h1>
+    <p>Transforma tu sueño de hogar en realidad con nuestras propiedades únicas e incomparables.</p>
+</section>
 
-    <section class="text-section">
-        <h2 style="color: aliceblue;">Nuestras Propiedades</h2>
-        <p style="color: aliceblue;">A continuación, te presentamos algunas de las propiedades que tenemos disponibles actualmente. En M&C Propiedades, nos esforzamos por ofrecer propiedades únicas e incomparables para transformar tu sueño de hogar en realidad. Si no encuentras lo que buscas, no dudes en ponerte en contacto con nosotros y te ayudaremos a encontrar la propiedad perfecta para ti.</p>
-    </section>
+<section class="image-section">
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="imag/propiedad_casa.webp" alt="Imagen 1" style="max-width: 60%">
+          </div>
+          <div class="swiper-slide">
+              <img src="imag/333934884_757444139274346_1070074596448839166_n.webp" alt="Imagen 2" style="max-width: 55%">
+          </div>
+          <div class="swiper-slide">
+              <img src="imag/333321764_970814567614289_6885483478269280333_n.webp" alt="Imagen 3" style="max-width: 60%">
+          </div>
+          <div class="swiper-slide">
+              <img src="imag/333579402_136163252435656_7078326058441701762_n.webp" alt="Imagen 4" style="max-width: 60%">
+          </div>
+          <div class="swiper-slide">
+              <img src="imag/333747839_902112127795778_1169269787887834108_n.webp" alt="Imagen 5" style="max-width: 60%">
+          </div>
+          <div class="swiper-slide">
+              <img src="imag/333608448_2352439604935588_4908537343021753476_n.webp" alt="Imagen 6" style="max-width: 60%">
+          </div>
+          <div class="swiper-slide">
+              <img src="imag/333167700_3165180600373552_6248302498496870341_n.webp" alt="Imagen 7" style="max-width: 60%">
+          </div>
+          <div class="swiper-slide">
+              <img src="imag/333248669_214572851081689_3640044652537068310_n.webp" alt="Imagen 8" style="max-width: 60%">
+          </div>
+          <div class="swiper-slide">
+              <img src="imag/333617958_172847075498691_5681755687436107969_n.webp" alt="Imagen 9" style="max-width: 60%">
+          </div>
+          <!-- Agrega más slides de acuerdo a tus necesidades -->
+      </div>
+      <!-- Agrega las flechas de navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+  </div>
+</section>
 
-    <section class="image-section">
-        <div class="image-container">
-            <img src="imag/REFERENCIA PROPIEDAD.svg" alt="prop1" style="max-width: 12%;">
-            <img src="imag/REFERENCIA PROPIEDAD.svg" alt="prop2" style="max-width: 12%;"> 
-            <img src="imag/REFERENCIA PROPIEDAD.svg" alt="prop3" style="max-width: 12%;">
-            <img src="imag/REFERENCIA PROPIEDAD.svg" alt="prop4" style="max-width: 12%;">
-            <img src="imag/REFERENCIA PROPIEDAD.svg" alt="prop5" style="max-width: 12%;">
-            <img src="imag/REFERENCIA PROPIEDAD.svg" alt="prop6" style="max-width: 12%;">
-            <img src="imag/REFERENCIA PROPIEDAD.svg" alt="prop7" style="max-width: 12%;">
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer-image">
-            <a href="index.html">
-                <img src="imag/Diseño sin título.svg" alt="M&C Propiedades" style="max-width:250px;">
-            </a>
-        </div>
-        <div class="footer-column">
-            <a  style="font-size: 100%;" href="servicios.html">
-                <h3>¿Que servicios prestamos?</h3> <section id="services" class="image-section">
-                    <ul>
-                        <li> Compra y Venta de propiedades</li>
-                        <li> Arriendos de propiedades</li>
-                        <li> Administración de arriendos</li>
-                        <li> Asesoramiento inmobiliario</li>
-                        <li> Venta de sitios y parcelas</li>
-                        <li> Inscripciones en CBR</li>
-                    </ul>
-        </a>
-        </div>
-        <div class="footer-column">
-        </div>
-        <div class="footer-column" id="contact">
-            <h3>Redes sociales</h3>
-            <ul class="social-icons">
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=988314162&text=Quisiera%20ponerme%20en%20contacto%20con%20ustedes%20">
-                        <i class="fa fa-whatsapp" style="font-size:24px;"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/myc.propiedades/">
-                        <i class="fa fa-instagram" style="font-size:24px;"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100088800337579">
-                        <i class="fa fa-facebook" style="font-size:24px;"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:mycasesoriasyservicios@gmail.com">
-                        <i class="fa fa-envelope" style="font-size:24px;"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-rights">
-            <p>© 2023 M&C Propiedades. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-        <script>
-            function scrollToAnchor(aid) {
-                var aTag = document.getElementById(aid);
-                aTag.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        </script>
+<section class="description-section">
+  <h3>Descripción de la propiedad</h3>
+  <ul style="text-decoration: solid;">Propiedad ubicada en Villa Santa Fe, Curicó.</ul>
+    <ul>Pasaje Cerrado</ul>
+    <ul>El terreno mide 198mts²</ul>
+    <ul>Estacionamiento techado para 2 vehículos</ul>
+    <ul>📍En primer piso:</ul>
+    <li> Lving piso flotante</li>
+    <li> Comedor piso de cerámica</li>
+    <li> Sala de estar piso cerámica</li>
+    <li> 1 baño completo piso cerámica</li>
+    <li> Cocina abierta con isla poso de porcelanato</li>
+    <li> Dormitorio principal con piso flotante, Walking closet y oficina.</li>
+    <li> Sala de lavado</li>
+    <li> bodega</li>
+    <ul>📍Segundo Piso</ul>
+    <li> 2 dormitorios</li> 
+    <li> 1 sala de estar</li>
+    <li> 1 proyecto de baño no terminado</li>
+</section>
+
+<footer>
+  <div class="footer-image">
+      <a href="index.html">
+          <img src="imag/Diseño sin título.svg" alt="M&C Propiedades" style="max-width:250px;">
+      </a>
+  </div>
+  <div class="footer-column">
+      <h3>¿Qué servicios prestamos?</h3>
+      <section id="services" class="image-section">
+          <ul>
+              <li>Compra y Venta de propiedades</li>
+              <li>Arriendos de propiedades</li>
+              <li>Administración de arriendos</li>
+              <li>Asesoramiento inmobiliario</li>
+              <li>Venta de sitios y parcelas</li>
+              <li>Inscripciones en CBR</li>
+          </ul>
+      </section>
+  </div>
+  <div class="footer-column">
+  </div>
+  <div class="footer-column" id="contact">
+      <h3>Redes sociales</h3>
+      <ul class="social-icons">
+          <li>
+              <a href="https://api.whatsapp.com/send?phone=988314162&text=Quisiera%20ponerme%20en%20contacto%20con%20ustedes%20">
+                  <i class="fa fa-whatsapp" style="font-size:24px;"></i>
+              </a>
+          </li>
+          <li>
+              <a href="https://www.instagram.com/myc.propiedades/">
+                  <i class="fa fa-instagram" style="font-size:24px;"></i>
+              </a>
+          </li>
+          <li>
+              <a href="https://www.facebook.com/profile.php?id=100088800337579">
+                  <i class="fa fa-facebook" style="font-size:24px;"></i>
+              </a>
+          </li>
+          <li>
+              <a href="mailto:mycasesoriasyservicios@gmail.com">
+                  <i class="fa fa-envelope" style="font-size:24px;"></i>
+              </a>
+          </li>
+      </ul>
+  </div>
+  <div class="footer-rights">
+      <p>© 2023 M&C Propiedades. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Agrega la biblioteca Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // Inicializa el carrusel con la biblioteca Swiper
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 </body>
 </html>
